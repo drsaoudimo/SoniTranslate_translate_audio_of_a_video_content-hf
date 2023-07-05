@@ -1,5 +1,5 @@
 ---
-title: SoniTranslate_translate_audio_of_a_video_content
+title: SoniTranslate <br/> translate_audio_of_a_video_content
 emoji: 🌍
 colorFrom: red
 colorTo: green
