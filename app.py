@@ -425,7 +425,7 @@ with gr.Blocks() as demo:
                     btts_voice04,
                     btts_voice05,
                     ],
-                    outputs=[video_output],
+                    outputs=[link_output],
                     cache_examples=True,
                 )
 
