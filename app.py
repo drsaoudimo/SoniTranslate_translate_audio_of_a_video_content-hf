@@ -274,7 +274,7 @@ sys.stdout = Logger("output.log")
 def read_logs():
     sys.stdout.flush()
     with open("output.log", "r") as f:
-        return f.read()[25:]
+        return f.read()
 
 
 with gr.Blocks() as demo:
