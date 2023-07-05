@@ -274,8 +274,8 @@ sys.stdout = Logger("output.log")
 def read_logs():
     sys.stdout.flush()
     with open("output.log", "r") as f:
-        print(f.read(), f.read()[:17])
-        if f.read()[:17] != "Model was trained":
+        
+        if str(f.read())[:17] != "Model was trained":
             return f.read()
 
 
