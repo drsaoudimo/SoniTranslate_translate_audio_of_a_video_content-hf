@@ -1,5 +1,5 @@
 ---
-title: ST Translate audio of a video
+title: Synchronized Translation for Videos (SoniTranslate)
 emoji: 🌍
 colorFrom: red
 colorTo: green
