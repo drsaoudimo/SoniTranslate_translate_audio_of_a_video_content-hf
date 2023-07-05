@@ -239,7 +239,7 @@ def translate_from_video(video, WHISPER_MODEL_SIZE, batch_size, compute_type,
     os.system(f"rm {mix_audio}")
     #os.system(f'''ffmpeg -i {audio_wav} -i audio_dub_stereo.wav -filter_complex "[1:a]asplit=2[sc][mix];[0:a][sc]sidechaincompress=threshold=0.003:ratio=20[bg]; [bg][mix]amerge[final]" -map [final] {mix_audio}''')
     #os.system(f'ffmpeg -y -i {audio_wav} -i audio_dub_stereo.wav -filter_complex "[0:0][1:0] amix=inputs=2:duration=longest" -c:a libmp3lame {mix_audio}')
-    os.system(f'ffmpeg -y -i audio.wav -i audio_dub_stereo.wav -filter_complex "[0:0]volume=0.25[a];[1:0]volume=1.85[b];[a][b]amix=inputs=2:duration=longest" -c:a libmp3lame {mix_audio}')
+    os.system(f'ffmpeg -y -i audio.wav -i audio_dub_stereo.wav -filter_complex "[0:0]volume=0.20[a];[1:0]volume=1.85[b];[a][b]amix=inputs=2:duration=longest" -c:a libmp3lame {mix_audio}')
                              
     os.system(f"rm {video_output}")
     os.system(f"ffmpeg -i {OutputFile} -i {mix_audio} -c:v copy -c:a copy -map 0:v -map 1:a -shortest {video_output}")
