@@ -1,2 +1,12 @@
-# sonitranslate_app_hf
-hugging face app
+---
+title: SoniTranslate_translate_audio_of_a_video_content
+emoji: 🦀
+colorFrom: indigo
+colorTo: green
+sdk: gradio
+sdk_version: 3.35.2
+app_file: app.py
+pinned: true
+---
+
+Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
