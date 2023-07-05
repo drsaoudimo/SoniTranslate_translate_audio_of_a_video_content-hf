@@ -349,7 +349,7 @@ with gr.Blocks() as demo:
                     tts_voice05,
                     ],
                     outputs=[video_output],
-                    #cache_examples=True,
+                    cache_examples=True,
                 )
 
 
@@ -426,7 +426,7 @@ with gr.Blocks() as demo:
                     btts_voice05,
                     ],
                     outputs=[video_output],
-                    #cache_examples=True,
+                    cache_examples=True,
                 )
 
 
