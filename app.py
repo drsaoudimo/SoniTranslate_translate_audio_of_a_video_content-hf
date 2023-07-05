@@ -309,7 +309,7 @@ with gr.Blocks() as demo:
         
             with gr.Column(variant='compact'): 
                 with gr.Row():
-                    video_button = gr.Button("Translate audio of video", )
+                    video_button = gr.Button("TRANSLATE", )
                 with gr.Row():
                     video_output = gr.Video()
 
@@ -387,7 +387,7 @@ with gr.Blocks() as demo:
 
             with gr.Column(variant='compact'): 
                 with gr.Row():
-                    text_button = gr.Button("Translate audio of video")
+                    text_button = gr.Button("TRANSLATE")
                 with gr.Row():
                     link_output = gr.Video() #gr.outputs.File(label="Download!") # gr.Video()
 
