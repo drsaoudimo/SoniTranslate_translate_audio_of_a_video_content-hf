@@ -1,5 +1,5 @@
 ---
-title: SoniTranslate <br/> translate_audio_of_a_video_content
+title: ST Translate audio of a video
 emoji: 🌍
 colorFrom: red
 colorTo: green
