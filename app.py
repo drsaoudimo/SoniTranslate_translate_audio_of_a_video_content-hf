@@ -83,6 +83,8 @@ def translate_from_video(video, WHISPER_MODEL_SIZE, batch_size, compute_type,
                          tts_voice00, tts_voice01,tts_voice02,tts_voice03,tts_voice04,tts_voice05):
 
     YOUR_HF_TOKEN = os.getenv("My_hf_token")
+
+    print(f"### Start {video} ###")  
                              
     OutputFile = 'Video.mp4'
     audio_wav = "audio.wav"
