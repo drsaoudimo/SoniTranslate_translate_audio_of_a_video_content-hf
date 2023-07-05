@@ -84,7 +84,6 @@ def translate_from_video(video, WHISPER_MODEL_SIZE, batch_size, compute_type,
 
     YOUR_HF_TOKEN = os.getenv("My_hf_token")
 
-    print(f"### Start {video} ###")  
                              
     OutputFile = 'Video.mp4'
     audio_wav = "audio.wav"
@@ -98,7 +97,8 @@ def translate_from_video(video, WHISPER_MODEL_SIZE, batch_size, compute_type,
     os.system("rm audio.wav")
                             
 
-    if os.path.exists(video):     
+    if os.path.exists(video):
+        print(f"### Start Video ###")  
         if device == 'cpu':
             # max 1 minute in cpu
             print('10 s. Limited for CPU ')
@@ -108,6 +108,7 @@ def translate_from_video(video, WHISPER_MODEL_SIZE, batch_size, compute_type,
         
         os.system("ffmpeg -y -i Video.mp4 -vn -acodec pcm_s16le -ar 44100 -ac 2 audio.wav")
     else:
+        print(f"### Start {video} ###")  
         if device == 'cpu':
             # max 1 minute in cpu
             print('10 s. Limited for CPU ')
