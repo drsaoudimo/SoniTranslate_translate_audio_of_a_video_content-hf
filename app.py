@@ -274,10 +274,8 @@ sys.stdout = Logger("output.log")
 def read_logs():
     sys.stdout.flush()
     with open("output.log", "r") as f:
-        if f.read()[:17] == "Model was trained"
+        if f.read()[:17] != "Model was trained":
             return f.read()
-        else:
-            return "."
 
 
 with gr.Blocks() as demo:
